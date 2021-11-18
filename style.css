@@ -11,12 +11,12 @@ body {
 h3 {
     font-family: 'Dancing Script', cursive;
     color: #cca685;
-    font-size: 2em;
+    font-size: 2vw;
     margin: 0;
 }
 h1 {
     margin: 0.5em 0;
-    font-size: 2em;
+    font-size: 2vw;
 }
 p {
     font-size: 1.1em;
@@ -27,7 +27,6 @@ a {
 }
 img {
     width: 100%;
-    object-fit: contain;
 }
 header{
     display: flex;
@@ -37,11 +36,8 @@ header{
     align-items: center
 }
 
-header .logo {
-    flex-basis: 60%;
-}
 header .logo article{
-    width: 300px;
+    width: 16vw;
 }
 
 header .navbar {
@@ -51,6 +47,7 @@ header .navbar nav ul{
     display: flex;
     list-style: none;
     justify-content: space-around;
+    font-size: 1vw;
 }
 
 header .intro{
@@ -78,10 +75,9 @@ header .intro-image{
 
 main .aboutus{
     display: flex;
+    margin: 5vw auto;
     justify-content: center;
-    margin-top: 5vw;
 }
-
 main .about-image {
     flex-basis: 25%;
 }
@@ -91,9 +87,13 @@ main .about-text {
     padding-top: 2vw;
     background: #fff url('./images/vg.png') right no-repeat;
     background-size: contain;
+    
 }
 main .about-text p{
-    font-size: 1.3em;
+    font-size: 1.3vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 5%;
 }
 main .about-text div{
     margin-left: 3vw;
