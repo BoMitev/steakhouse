@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Playfair+Display:wght@500&family=Roboto:ital,wght@0,300;0,900;1,500&display=swap');
+
+body {
+   background: #171717 url('./images/bg.png') repeat -20vw;
+   background-size: 50%; 
+   font-family: 'Roboto', sans-serif;
+   width: 90%;
+   margin: 1vw auto;
+   color: white;
+}
+h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #cca685;
+    font-size: 2em;
+    margin: 0;
+}
+h1 {
+    margin: 0.5em 0;
+    font-size: 2em;
+}
+p {
+    font-size: 1.1em;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    object-fit: contain;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center
+}
+
+header .logo {
+    flex-basis: 60%;
+}
+header .logo article{
+    width: 300px;
+}
+
+header .navbar {
+    flex-basis: 40%;
+}
+header .navbar nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+header .intro{
+    flex-basis: 63%;
+    background-position: top right;
+    background-size: 33%;
+}
+header .intro article {
+    margin-left: 4vw;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5vw;
+}
+header .intro-text p {
+    margin: 0;
+}
+header .intro-text a{
+    font-size: 1.15vw;
+    border: 1px solid #fff;
+    padding: 0.8em 1em;
+    margin: 0 0 0 1vw;
+}
+header .intro-image{
+    flex-basis: 37%;
+}
+
+main .aboutus{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+}
+
+main .about-image {
+    flex-basis: 25%;
+}
+main .about-text {
+    flex-basis: 60%;
+    color: #000;
+    padding-top: 2vw;
+    background: #fff url('./images/vg.png') right no-repeat;
+    background-size: contain;
+}
+main .about-text p{
+    font-size: 1.3em;
+}
+main .about-text div{
+    margin-left: 3vw;
+    width: 80%;
+}
