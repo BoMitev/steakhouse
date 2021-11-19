@@ -11,7 +11,7 @@ body {
 h3 {
     font-family: 'Dancing Script', cursive;
     color: #cca685;
-    font-size: 2vw;
+    font-size: 2em;
     margin: 0;
 }
 h1 {
@@ -142,7 +142,7 @@ main .about-text a{
     background-position: 10vw 12vw;
 }
 .menu p {
-    line-height: 1.2vw;
+    line-height: 1.2em;
     letter-spacing: 0.05vw;
 }
 .menu section {
