@@ -16,9 +16,12 @@ h3 {
 }
 h1 {
     margin: 0.5em 0;
-    font-size: 2vw;
+    font-size: 1.8vw;
 }
 p {
+    font-size: 1.1em;
+}
+h2 {
     font-size: 1.1em;
 }
 a {
@@ -74,6 +77,10 @@ header .intro-image{
     flex-basis: 37%;
 }
 
+main {
+    width: 85%;
+    margin: auto;
+}
 main .aboutus{
     display: flex;
     margin: 5vw auto;
@@ -83,7 +90,7 @@ main .about-image {
     flex-basis: 25%;
 }
 main .about-text {
-    flex-basis: 60%;
+    flex-basis: 70%;
     color: #000;
     padding-top: 2vw;
     background: #fff url('./images/vg.png') right no-repeat;
@@ -91,12 +98,55 @@ main .about-text {
     
 }
 main .about-text p{
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     overflow: hidden;
     text-overflow: ellipsis;
     max-height: 5%;
 }
 main .about-text div{
     margin-left: 3vw;
+    width: 70%;
+}
+main .about-text a{
+    font-size: 1vw;
+    padding: 0.4em 0.6em;
+    border: 1px solid #000;
+    float: right;
+}
+
+.menu p {
+    line-height: 1.2vw;
+    letter-spacing: 0.05vw;
+}
+.menu section {
+    margin: 3vw auto;
+}
+.menu-about {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+main .menu-about span{
+    flex-basis: 45%;
+    text-align: center;
+}
+main .menu-about p{
+    flex-basis: 60%;
+}
+main .appetizer{
     width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+main .appetizer article {
+    flex-basis: 30%;
+}
+main .appetizer article img{
+    width: 100%;
+}
+.appetizer div {
+    flex-basis: 35%;
+    margin-left: 1.5vw;
 }
