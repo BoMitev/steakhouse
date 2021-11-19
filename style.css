@@ -2,7 +2,7 @@
 
 body {
    background: #171717 url('./images/bg.png') repeat -20vw;
-   background-size: 50%; 
+   background-size: 60%; 
    font-family: 'Roboto', sans-serif;
    width: 90%;
    margin: 1vw auto;
@@ -53,6 +53,28 @@ header .navbar nav ul{
     justify-content: space-around;
     font-size: 1vw;
 }
+header nav a {
+    margin-right: 0.5vw;
+    padding-bottom: 0.3vw;
+    position: relative;
+    text-decoration: none;
+}
+header nav a::before{
+    background-color: #cca685;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1vw;
+    transform: scaleX(0);
+    transition: transform 0.7s ease;
+}
+header nav a:hover::before {
+    transform: scaleX(1);
+}
+
 
 header .intro{
     flex-basis: 63%;
@@ -114,6 +136,11 @@ main .about-text a{
     float: right;
 }
 
+.menu {
+    background: url('./images/powder.png') no-repeat;
+    background-size: 75%;
+    background-position: 10vw 12vw;
+}
 .menu p {
     line-height: 1.2vw;
     letter-spacing: 0.05vw;
@@ -134,19 +161,32 @@ main .menu-about span{
 main .menu-about p{
     flex-basis: 60%;
 }
-main .appetizer{
-    width: 80%;
+
+.menu-item{
+    width: 70%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
 }
-main .appetizer article {
-    flex-basis: 30%;
+.menu-item article {
+    flex-basis: 32%;
 }
-main .appetizer article img{
+.menu-item article img{
     width: 100%;
 }
-.appetizer div {
+.menu-item div {
     flex-basis: 35%;
-    margin-left: 1.5vw;
+}
+.main-dish article {
+    flex-basis: 40%;
+}
+.main-dish div {
+    flex-basis: 50%;
+}
+.side-dish article{
+    flex-basis: 39%;
+}
+
+.dessert article {
+    flex-basis: 45%;
 }
